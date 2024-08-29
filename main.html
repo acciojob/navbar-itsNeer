@@ -1,16 +1,62 @@
-<!DOCTYPE html>
-
-<html>
-
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">  
+    <title>Navigation Bar</title>  
+    <style>  
+        body {  
+            margin: 0;  
+            font-family: Arial, sans-serif;  
+        }  
+        .navbar {  
+            display: flex;  
+            justify-content: space-between;  
+            align-items: center;  
+            background-color: #6e272d; /* Maroon color */  
+            padding: 10px 20px;  
+            color: white;  
+        }  
+        .nav-list {  
+            list-style-type: none;  
+            margin: 0;  
+            padding: 0;  
+            display: flex;  
+        }  
+        .nav-item {  
+            padding: 27px 27px; /* 18px * 1.5 */  
+            font-size: 18px;  
+            cursor: pointer;  
+            transition: background-color 0.3s;  
+        }  
+        .nav-item:hover {  
+            background-color: #b09e4d; /* Change background on hover */  
+        }  
+        .separator {  
+            border-right: 2px solid white;  
+            height: 20px; /* Adjust height as needed */  
+            margin: 0 10px; /* Space between items */  
+        }  
+        .nav-item:last-child {  
+            border: none; /* No border for the last item */  
+        }  
+    </style>  
+</head>  
+<body>  
+    <nav class="navbar">  
+        <ul class="nav-list">  
+            <li class="nav-item">Product</li>  
+            <li class="separator"></li>  
+            <li class="nav-item">Testimonials</li>  
+            <li class="separator"></li>  
+            <li class="nav-item">Pricing</li>  
+        </ul>  
+        <ul class="nav-list">  
+            <li class="nav-item">Team</li>  
+            <li class="separator"></li>  
+            <li class="nav-item">Contact Us</li>  
+        </ul>  
+    </nav>  
+</body>  
 </html>
